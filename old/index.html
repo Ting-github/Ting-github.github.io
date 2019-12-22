@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <a href="index.html" id="header-title"> My Blog</a>
+        <ul id="header-nav">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#footer">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="me.jpeg" height="100px" alt="">
+            <span>Me</span>
+          </div>
+          <p class="post-date" id ="post0"></p>
+          <script>
+          var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+          // --document.write(utc);
+          document.getElementById("post0").innerHTML = utc;
+          </script>
+          <h3 class="post-title">Ideas for spreading</h3>
+          <div class="post-content">
+<!--             <video width="320" height="240" controls>
+            <source src="https://www.youtube.com/embed/Vhh_GeBPOhs">
+            <source src="movie.ogg" type="video/ogg"> --> 
+           <!-- </video> --> 
+            
+           <iframe width="360" height="240" src="https://www.youtube.com/embed/Vhh_GeBPOhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="me.jpeg" height="100px" alt="">
+            <span>Me</span>
+          </div>
+          <p class="post-date">Today</p>
+          <h3 class="post-title">Become a web developer</h3>
+          <div class="post-content">
+            <p>If somebody want to learn how to make a <strong>website</strong>,
+              I would recommend <a href=
+              "https://getmimo.com">Mimo.</a>
+            </p>
+            <p><a href="https://getmimo.com">Mimo</a>&nbsp;provides excellent tutorials for different levels of learners.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="android.jpeg" height="100px" alt="">
+            <span>Android</span>
+          </div>
+          <p class="post-date">Today</p>
+          <h3 class="post-title">Become a web developer</h3>
+          <div class="post-content">
+            <p>I wanna publish my blog on github.</p>
+            <p>We'll use a so-called repository on<em>GitHub</em> to store the website.
+              This is the easiest, fastest, and free-est way to publish a website.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="column">
+          <h4>My Links</h4>
+          <p>
+            <a href="https://www.linkedin.com/in/xiuting-ting-wang-08a7b5162/">LinkedIn</a><br>
+            <a href="https://www.facebook.com/profile.php?id=100009709951648">Facebook</a>
+          </p>
+        </div>
+
+        <div class="column">
+          <h4>My Story</h4>
+          <p>Hi there! I'm an aspiring web developer.</p>
+        </div>
+
+      </div>
+
+    </div
+  </body>
+</html>
